@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <h1>The List of All Blogs</h1>
+    <dl class="row">
+    {% if blog_list %}
+    
+        {% for item in blog_list %}
+            <dt class="col-sm-2"><b>Title:</b></dt>     <dd class="col-sm-10"> <a href="/blog_info/{{item['h1_title']}}">{{item['h1_title']}}</a></dd>
+            <dt class="col-sm-2"><b>Author:</b></dt>    <dd class="col-sm-10">{{item['author_name']}}</dd> 
+            <dt class="col-sm-2"><b>Category:</b></dt>  <dd class="col-sm-10">{{item['industry']}}</dd> 
+            <hr>
+        {% endfor %}
+    
+    {% endif %}
+    </dl>   
+    
+    <h2>Find by Category</h2>
+    <button class="btn btn-dark" id="Health" onclick="location.href='/category/Health'">Health</button>
+    <button class="btn btn-dark" id="Digital Marketing" onclick="location.href='/category/DigitalMarketing'">Digital Marketing</button>
+    <button class="btn btn-dark" id="Insurance" onclick="location.href='/category/Insurance'">Insurance</button>
+    <button class="btn btn-dark" id="Tech" onclick="location.href='/category/Tech'">Tech</button>
+
+</body>
+</html>
