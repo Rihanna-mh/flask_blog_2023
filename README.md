@@ -35,19 +35,29 @@ python flask_server.py
 Visit http://127.0.0.1:8080 in your web browser to access the application.
 
 Usage
+
 Visit the home page to submit a new blog by filling out the form.
 Navigate to the blog list to see all submitted blogs.
 Click on a blog title to view its details.
 Use the category buttons to filter blogs by industry.
 
 Project Structure
+
 flask_server.py: Main Flask application file.
+
 templates/: HTML templates for rendering pages.
+
 blogForm.html: Form for submitting a new blog.
+
 blogResult.html: Page displayed after successful blog submission.
+
 c.html: Page for listing all blogs.
+
 d.html: Page for displaying blog details.
+
 category.html: Page for listing blogs by category.
 
+
 Acknowledgments
+
 This project is a simple example of a Flask web application. Feel free to customize and extend it based on your requirements.
