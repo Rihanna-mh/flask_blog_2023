@@ -8,7 +8,7 @@ UPLOAD_FOLDER = "/Users/rihanna/Documents/Canadian_Business_College/Project/07-P
 
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'xxx'
+app.config['MYSQL_PASSWORD'] = '***'
 app.config['MYSQL_DB'] = 'flask_db_blog1'
 mysql = MySQL(app)
 

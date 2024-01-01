@@ -10,6 +10,17 @@
 </head>
 <body>
 
+    <h2>Find by Category</h2>
+    <button class="btn btn-dark" id="Health" onclick="location.href='/category/Health'">Health</button>
+    <button class="btn btn-dark" id="Digital Marketing" onclick="location.href='/category/DigitalMarketing'">Digital Marketing</button>
+    <button class="btn btn-dark" id="Insurance" onclick="location.href='/category/Insurance'">Insurance</button>
+    <button class="btn btn-dark" id="Tech" onclick="location.href='/category/Tech'">Tech</button>
+    <br>
+    <br>
+    <a href="/form">Upload your own blog</a>
+    <br>
+    <br>
+
     <h1>The List of All Blogs</h1>
     <dl class="row">
     {% if blog_list %}
@@ -23,12 +34,6 @@
     
     {% endif %}
     </dl>   
-    
-    <h2>Find by Category</h2>
-    <button class="btn btn-dark" id="Health" onclick="location.href='/category/Health'">Health</button>
-    <button class="btn btn-dark" id="Digital Marketing" onclick="location.href='/category/DigitalMarketing'">Digital Marketing</button>
-    <button class="btn btn-dark" id="Insurance" onclick="location.href='/category/Insurance'">Insurance</button>
-    <button class="btn btn-dark" id="Tech" onclick="location.href='/category/Tech'">Tech</button>
 
 </body>
 </html>
