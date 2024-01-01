@@ -25,9 +25,13 @@ Create a MySQL database named flask_db_blog1.
 Update the MySQL configuration in flask_server.py with your database credentials:
 
 app.config['MYSQL_HOST'] = 'localhost'
+
 app.config['MYSQL_USER'] = 'your-username'
+
 app.config['MYSQL_PASSWORD'] = 'your-password'
+
 app.config['MYSQL_DB'] = 'flask_db_blog1'
+
 
 2. Run the Flask application:
 python flask_server.py
